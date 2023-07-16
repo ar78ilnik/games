@@ -1,0 +1,32 @@
+.button {
+    font-family: 'DMSans-Bold', sans-serif;
+    border: none;
+
+    &_menu {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: transparent;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        justify-self: end;
+    }
+
+    &_game {
+        display: block;
+        background: linear-gradient(#ffff00, #ffcb00);
+        color: #a75100;
+        width: 200px;
+        margin: 0 auto;
+        line-height: 2;
+    }
+}
+
+@media (min-width: $pv) {
+    .button {
+        &_menu {
+            display: none;
+        }
+    }
+}

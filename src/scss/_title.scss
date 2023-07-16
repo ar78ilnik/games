@@ -1,0 +1,15 @@
+.title {
+	text-align: center;
+	&_h2 {
+		font-size: 0.95rem;
+	}
+	&_h3 {
+		&-clubs {
+			color: var(--white);
+			background-color: var(--brown);
+			padding: 10px 20px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+	}
+}

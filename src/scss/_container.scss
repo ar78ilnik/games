@@ -1,0 +1,29 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    &_body {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 3em;
+    }
+    &_header {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+        &_body {
+            flex-direction: initial;
+        }
+        &_main {
+            width: 100%;
+        }
+    }
+}

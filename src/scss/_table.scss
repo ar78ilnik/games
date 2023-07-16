@@ -1,0 +1,45 @@
+.table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.table thead {
+    text-align: center;
+}
+
+.table table {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 2;
+    margin-top: 2em;
+}
+
+.table__column {
+    width: 100%;
+}
+
+.table tr > td:nth-child(odd) {
+    text-align: left;
+}
+
+.table tr > td:nth-child(even) {
+    text-align: right;
+}
+
+@media (min-width: 700px) {
+    .table {
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__column {
+            width: 32%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .table {
+    }
+}

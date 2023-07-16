@@ -1,0 +1,26 @@
+.nav {
+    &_header {
+        display: none;
+    }
+
+    &_header--open {
+        display: block;
+        position: absolute;
+        top: 105px;
+        left: 0;
+        right: 0;
+        background-color: var(--green-header);
+        min-height: 100vh;
+        z-index: 2;
+    }
+}
+
+@media (min-width: $pv) {
+    .nav {
+        &_header {
+            display: block;
+            flex-basis: 60%;
+            height: inherit;
+        }
+    }
+}

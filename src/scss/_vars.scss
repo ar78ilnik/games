@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input[type="radio"] {
+    appearance: none;
+}
+
+/* Viewport Sizes*/
+
+/* Mobile Viewport 375*/
+$mv: 320px;
+/*Tablet Viewport 768*/
+$tv: 768px;
+/*PC Viewport 1728*/
+$pv: 1200px;
+
+
+/* Colors */
+:root {
+    --text: rgba(44, 44, 44, 1);
+    --main: rgba(115, 159, 61, 0.5);
+    --select: rgb(245, 178, 159, 1);
+    --green: rgba(177, 226, 117, 1);
+    --green-header: rgba(228, 255, 195, 1);
+    --black-semi: rgba(0,0,0,0.4);
+    --brown: rgba(238, 105, 63, 1);
+    --white: rgba(252, 253, 254, 1);
+    --table: rgba(245, 222, 207, 1);
+    --blue: rgba(189, 212, 226, 1);
+    --search: rgba(202, 202, 202, 1);
+    --link-aside-one-top: rgb(193,29,5);
+    --link-aside-one-bottom: rgb(222,79,23);
+    --link-aside-two-top: rgb(20,182,2);
+    --link-aside-two-bottom: rgb(72,255,113);
+}

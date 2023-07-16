@@ -1,0 +1,29 @@
+.list {
+    &_header {
+        display: none;
+    }
+
+    &_header--open {
+        display: block;
+        padding-left: 22px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &_footer {
+        display: block;
+        margin-top: 1.42em;
+    }
+}
+
+@media (min-width: $pv) {
+    .list {
+        &_header {
+            display: flex;
+            justify-content: space-between;
+            height: inherit;
+        }
+    }
+}

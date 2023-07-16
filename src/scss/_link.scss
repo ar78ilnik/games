@@ -1,0 +1,32 @@
+.link {
+	color: var(--black);
+	text-decoration: none;
+	&_menu {
+		display: flex;
+		height: 100%;
+		align-items: center;
+	}
+
+	&_play {
+		display: block;
+		width: 200px;
+		margin: 0 auto;
+		background: linear-gradient(#ffff00, #ffcb00);
+		color: #a75100;
+	}
+
+	&__aside-item {
+		width: 70%;
+		text-align: center;
+		line-height: 2.5;
+		border-radius: 10px;
+	}
+
+	&__aside-item:nth-child(odd) {
+		background: linear-gradient(var(--link-aside-one-top), var(--link-aside-one-bottom));
+	}
+
+	&__aside-item:nth-child(even) {
+		background: linear-gradient(var(--link-aside-two-top), var(--link-aside-two-bottom));
+	}
+}

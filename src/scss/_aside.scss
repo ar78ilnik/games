@@ -1,0 +1,54 @@
+.aside {
+	background-image: url(../img/bg-new.webp);
+	background-repeat: repeat;
+	border-radius: 10px;
+
+	&__items,
+	&__slots {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		gap: 2em;
+	}
+
+	&__item {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	&__item-hover {
+		display: none;
+	}
+
+	&__item:hover &__item-hover{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10%;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		transition-property: display;
+		transition-duration: 1s;
+		background-color: var(--black-semi);
+		color: var(--white);
+	}
+
+	&__img {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.aside {
+		flex-basis: 25%;
+	}
+}
