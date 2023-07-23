@@ -1,0 +1,15 @@
+.icon {
+	&_menu {
+		stroke: var(--text);
+	}
+
+	&_menu,
+	.button_menu--open &-cross {
+		display: block;
+	}
+
+	&-cross, 
+	.button_menu--open &-menu {
+		display: none;
+	}
+}

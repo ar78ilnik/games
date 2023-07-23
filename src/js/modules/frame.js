@@ -1,5 +1,5 @@
 export const frame = () => {
-    let link = "https://aplaydemo2.yellowslot.games/game/fullstate/html5/novomatic/bookofra/?project=250&user_id=bc416bdc-96ca-4ebd-9789-f68772a6607b&demo=1&wid=1&s=eee56f996df9f103bd78bb5e02f533c5",
+    let link = "https://demo.monkeyboxsrv.com/demo/fullstate/html5/novomatic/bookofrahd",
         button = document.querySelector('.button_game');
 
     const findAndRemovePictures = (pictures) => {
@@ -15,15 +15,14 @@ export const frame = () => {
 
         iframes.innerHTML = "<iframe>"
         iframes.setAttribute('src', link);
+        iframes.setAttribute('class', 'iframe');
         block.appendChild(iframes);
 
         return iframes;
     }
 
     button.addEventListener('click', () => {
-        findAndRemovePictures('.blocks__picture');
+        //findAndRemovePictures('.blocks__picture');
         createIframe('.blocks__frame');
-    });
-
-    
+    });   
 }

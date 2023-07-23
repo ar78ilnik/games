@@ -1,18 +1,24 @@
 .link {
 	color: var(--black);
 	text-decoration: none;
+
+	&_play {
+        display: block;
+        background: linear-gradient(#ffff00, #ffcb00);
+        color: #a75100;
+        width: 300px;
+        margin: 0 auto;
+        line-height: 2;
+        text-align: center;
+	}
+
 	&_menu {
 		display: flex;
 		height: 100%;
+		width: 95%;
 		align-items: center;
-	}
-
-	&_play {
-		display: block;
-		width: 200px;
-		margin: 0 auto;
-		background: linear-gradient(#ffff00, #ffcb00);
-		color: #a75100;
+		line-height: 4;
+		border-bottom: 1px solid var(--black-semi);
 	}
 
 	&__aside-item {
@@ -28,5 +34,14 @@
 
 	&__aside-item:nth-child(even) {
 		background: linear-gradient(var(--link-aside-two-top), var(--link-aside-two-bottom));
+	}
+}
+
+@media (min-width: 1200px) {
+	.link {
+		&_menu {
+			border: none;
+			width: 100%;
+		}
 	}
 }

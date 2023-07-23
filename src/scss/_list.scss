@@ -7,6 +7,14 @@
         display: block;
         padding-left: 22px;
     }
+
+    &__blocks {
+        width: 90%;
+    }
+
+    &__blocks li {
+        margin-bottom: 2em;
+    }
     &__item {
         display: flex;
         align-items: center;

@@ -1,7 +1,17 @@
 .title {
 	text-align: center;
+	&_list {
+		font-size: 1rem;
+		font-weight: 400;
+		text-align: inherit;
+		margin-bottom: .5em;
+	}
+	&_author {
+		font-size: .95rem;
+		text-align: inherit;
+	}
 	&_h2 {
-		font-size: 0.95rem;
+		font-size: .95rem;
 	}
 	&_h3 {
 		&-clubs {

@@ -1,0 +1,39 @@
+.tabs {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	&__input {
+		opacity: 0;
+		z-index: -1;
+	}
+	&__label {
+		position: relative;
+		&::after {
+			display: block;
+			content: "\276F";
+			width: 1em;
+			height: 1em;
+			position: absolute;
+			top: 0;
+			right: -25px;
+			text-align: center;
+			transition: all .35s;
+		}
+	}
+	&__content {
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 1em;
+		transition: all .35s;
+	}
+	&__input:checked + &__label::after {
+		transform: rotate(90deg);
+	}
+	&__input:checked ~ &__content {
+		max-height: 100vh;
+		transition: all .35s;
+		padding: 1em;
+	}
+}
