@@ -49,8 +49,32 @@
 	}
 }
 
+@media (min-width: $tv) {
+	.aside {
+		&__items {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__item {
+			width: 40%;
+		}
+	}
+}
+
 @media (min-width: 1000px) {
 	.aside {
 		flex-basis: 25%;
+	}
+}
+
+@media (min-width: $pv) {
+	.aside {
+		&__items {
+			flex-direction: column;
+		}
+		&__item {
+			width: 90%;
+		}
 	}
 }
