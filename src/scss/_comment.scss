@@ -12,6 +12,11 @@
 		font-size: .7rem;
 		grid-row: 1/2;
 	}
+	&-form-author input,
+	&-form-email input {
+		width: 100%;
+		line-height: 4;
+	}
 	&-form-author {
 		grid-row: 2/3;
 	}
@@ -24,10 +29,6 @@
 	&-form-cookies-consent {
 		font-size: 0.7rem;
 		grid-row: 5/6;
-	}
-	&-input {
-		width: 100%;
-		line-height: 4;
 	}
 	&-textarea {
 		width: 100%;
