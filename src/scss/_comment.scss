@@ -12,6 +12,9 @@
 		font-size: .7rem;
 		grid-row: 1/2;
 	}
+	&-input {
+		padding-left: 1em;
+	}
 	&-form-author input,
 	&-form-email input {
 		width: 100%;
@@ -32,6 +35,8 @@
 	}
 	&-textarea {
 		width: 100%;
+		padding-top: 1em;
+		padding-left: 1em;
 	}
 	&-reply-title {
 		font-size: 0.95rem;

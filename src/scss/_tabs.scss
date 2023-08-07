@@ -11,12 +11,13 @@
 		border-bottom: 1px solid var(--black-semi);
 	}
 	&__input {
+		display: none;
 		opacity: 0;
-		z-index: -1;
 	}
 	&__label {
 		position: relative;
-		margin-left: -20px;
+		display: block;
+		width: 90%;
 		&::after {
 			display: block;
 			content: "\276F";
@@ -32,8 +33,9 @@
 	&__content {
 		max-height: 0;
 		overflow: hidden;
-		padding: 0 1em;
 		transition: all .35s;
+		font-size: .9rem;
+		line-height: 1.6;
 	}
 	&__input:checked + &__label::after {
 		transform: rotate(90deg);
@@ -41,6 +43,16 @@
 	&__input:checked ~ &__content {
 		max-height: 100vh;
 		transition: all .35s;
-		padding: 1em;
+		padding-top: 1em;
+	}
+}
+
+@media (min-width: $tv) {
+	.tabs {
+		&__label {
+			&::after {
+				right: -55px;
+			}
+		}
 	}
 }

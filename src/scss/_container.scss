@@ -17,18 +17,10 @@
     }
     &_author {
         width: 70%;
-        position: relative;
-    }
-    &_author::before {
-        display: block;
-        content: url('../img/author.webp');
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        left: -140px;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        grid-row-gap: 2em;
     }
     &_footer {
         background: linear-gradient(#cc3e24, #aa4821);

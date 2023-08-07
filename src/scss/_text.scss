@@ -3,7 +3,8 @@
 	font-size: 0.9rem;
 	line-height: 1.4;
 	&_author {
-		margin-top: 2em;
+		grid-column: 1/5;
+		grid-row: 2/3;
 	}
 	&_footer {
 		color: var(--search);
